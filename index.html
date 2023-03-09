@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Study</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="main">
+    <h1>Table Study</h1>
+    <table id="table" border="1">
+      <tr>
+          <th>SNum</th>
+          <th>Name</th>
+          <th>Surname</th>
+          <th>Country</th>
+          <th>Bday</th>
+      </tr>
+      <div id="table-list">
+        <tr id="person-list">
+          <td>01</td>
+          <td id="1">Gökçe</td>
+          <td id="2">Kara</td>
+          <td id="3">Turkey</td>
+          <td id="4">11.11.1998</td>
+        </tr>
+      </div>
+    </table>
+    <div class="update">
+        <button onclick="editTable()" id="updateOnc">Update Table</button>
+    </div>
+
+    <div class="updateTable">
+
+        <div class="title">Sıra No</div><input type="text" name="sNum" id="sNum" class="r">
+        <div class="title">First Name</div><input type="text" name="firstName" id="firstName" class="r">
+        <div class="title">Last Name</div><input type="text" name="lastName" id="lastName" class="r">
+        <div class="title">Country</div><input type="text" name="country" id="country" class="r">
+        <div class="title">Birthday</div><input type="date" name="birth" id="birth" class="r"> <br>
+        <button onclick="editRow()" class="updateBtn">Update</button>
+        <button onclick="addTableRow()" class="addBtn">Add Element</button>
+
+    </div>
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>
